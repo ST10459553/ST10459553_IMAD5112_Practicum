@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+//        displaying splash screen after 6 seconds
         val nextScreen=Intent(this, MainActivity2::class.java)
         Handler().postDelayed({
 

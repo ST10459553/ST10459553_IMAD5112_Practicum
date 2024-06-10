@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.weatheraverageapp.databinding.ActivityMain3Binding
 
 class MainActivity3 : AppCompatActivity() {
+//    creating binding
     private lateinit var binding:ActivityMain3Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,14 +23,16 @@ class MainActivity3 : AppCompatActivity() {
             insets
         }
         val activity=MainActivity3()
-
+//proceed button on click listner redirect us to next page
         binding.proceedBtn.setOnClickListener {
             val nextPage=Intent(this,MainActivity4::class.java)
             startActivity(nextPage)
         }
+
+//        exit button onlick listener
         binding.exitBtn.setOnClickListener {
            finishAffinity()
-            System.exit(0)
+
         }
 
     }

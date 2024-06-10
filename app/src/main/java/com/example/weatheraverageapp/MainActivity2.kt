@@ -19,6 +19,7 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+//        splashScreen initialized displaying next page after 2 seconds
         val nextScreen= Intent(this, MainActivity3::class.java)
         Handler().postDelayed({
 

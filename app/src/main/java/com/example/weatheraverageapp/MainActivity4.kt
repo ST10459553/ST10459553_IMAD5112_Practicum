@@ -1,5 +1,6 @@
 package com.example.weatheraverageapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
@@ -24,6 +25,7 @@ class MainActivity4 : AppCompatActivity() {
         val averageTv=binding.averageTv
 
 
+// Function to initialize UI elements on the
         binding.calcAVerage.setOnClickListener {
 
             if (binding.mondayMIn.text.isNullOrEmpty() || binding.mondayMax.text.isNullOrEmpty() ||
@@ -65,7 +67,6 @@ class MainActivity4 : AppCompatActivity() {
             val sundayTextMax=binding.sundayMax.text.toString().toInt()
             val sundayCondition=binding.sundayCond.text.toString()
             val monday=Temperature(mondayTextMin,mondayTextMax,mondayCondition)
-            
             val tuesday=Temperature(tuesdayTextMin,tuesdayTextMax,tuesdayCondition)
             val wednesday=Temperature(wednesdayTextMin,wednesdayTextMax,wednesdayCondition)
             val thursday=Temperature(thursdayTextMin,thursdayTextMax,thursdayCondition)
@@ -73,6 +74,9 @@ class MainActivity4 : AppCompatActivity() {
             val saturday=Temperature(saturdayTextMin,saturdayTextMax,saturdayCondition)
             val sunday=Temperature(sundayTextMin,sundayTextMax,sundayCondition)
             val temperatures= mutableListOf<Temperature>(monday,tuesday,wednesday,thursday,friday,saturday,sunday)
+
+
+
 
 
             var total = 0
@@ -95,6 +99,11 @@ class MainActivity4 : AppCompatActivity() {
             finishAffinity()
         }
 
+        binding.detailedView.setOnClickListener {
+
+
+        }
+
 
 
         }
@@ -103,7 +112,7 @@ class MainActivity4 : AppCompatActivity() {
 
     }
 
-
+//object data class with constructor
 data class Temperature (val min:Int=0, val max:Int, val info:String){
 
 }
