@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#263C3E"
+        android:fontFamily="@font/chelsea_market"
+        android:gravity="center"
+        android:padding="11sp"
+        android:text="Weather Average Calculator"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="398dp"
+        android:layout_height="381dp"
+        app:layout_constraintBottom_toTopOf="@+id/calcAVerage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695">
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Day" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="MIn" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Max" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Weather Condition" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Monday" />
+
+            <EditText
+
+                android:id="@+id/mondayMIn"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/mondayMax"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/mondayCond"
+                android:layout_weight="1" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tuesday" />
+
+            <EditText
+                android:id="@+id/tuesdayMin"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/tuesdayMax"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/tuesdayCond"
+                android:layout_weight="1" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Wednesday" />
+
+            <EditText
+                android:id="@+id/wednesdayMin"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/wednesdayMax"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/wednesdayCond"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Thursday" />
+
+            <EditText
+                android:id="@+id/ThursdayMin"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ThursdayMax"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/ThursdayCond"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Friday" />
+
+            <EditText
+                android:id="@+id/fridayMin"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/fridayMax"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/fridayCond"
+                android:layout_weight="1" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Saturday" />
+
+            <EditText
+                android:id="@+id/saturdayMIn"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/saturdayMax"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/saturdayCond"
+                android:layout_weight="1" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Sunday" />
+
+            <EditText
+                android:id="@+id/sundayMin"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+
+                />
+
+            <EditText
+                android:id="@+id/sundayMax"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+
+
+                />
+
+            <EditText
+                android:id="@+id/sundayCond"
+
+                android:layout_weight="1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/calcAVerage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Average"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
+
+    <TextView
+        android:id="@+id/averageTv"
+        android:layout_width="150dp"
+        android:layout_height="34dp"
+        android:background="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/calcAVerage"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <Button
+        android:id="@+id/detailedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detailed View"
+        app:layout_constraintBottom_toTopOf="@+id/exitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcAVerage" />
+
+    <Button
+
+        android:id="@+id/exitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textColor="#C62B2B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcAVerage"
+        app:layout_constraintVertical_bias="0.811" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
