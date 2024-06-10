@@ -65,6 +65,7 @@ class MainActivity4 : AppCompatActivity() {
             val sundayTextMax=binding.sundayMax.text.toString().toInt()
             val sundayCondition=binding.sundayCond.text.toString()
             val monday=Temperature(mondayTextMin,mondayTextMax,mondayCondition)
+            
             val tuesday=Temperature(tuesdayTextMin,tuesdayTextMax,tuesdayCondition)
             val wednesday=Temperature(wednesdayTextMin,wednesdayTextMax,wednesdayCondition)
             val thursday=Temperature(thursdayTextMin,thursdayTextMax,thursdayCondition)
@@ -72,6 +73,7 @@ class MainActivity4 : AppCompatActivity() {
             val saturday=Temperature(saturdayTextMin,saturdayTextMax,saturdayCondition)
             val sunday=Temperature(sundayTextMin,sundayTextMax,sundayCondition)
             val temperatures= mutableListOf<Temperature>(monday,tuesday,wednesday,thursday,friday,saturday,sunday)
+
 
             var total = 0
             var count = 0

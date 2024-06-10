@@ -49,7 +49,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintVertical_bias="0.127" />
+
+    <ImageView
+        android:layout_width="262dp"
+        android:layout_height="269dp"
+        android:src="@drawable/weatherpng"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.168" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
